@@ -1,0 +1,83 @@
+1) for the given json iterate over all for loops(for,forin,forof,foreach)
+
+a) for:
+var numbers=[10,20,30,40,50];
+for(var i=0;i<numbers.length;i++){
+  console.log(numbers[i])
+}
+b) forin :
+
+const cars = ["Bmw","Volvo","Ford","Audi"];
+let text =""
+for (let x in cars) {
+  text += cars[x] + " ";
+  console.log(cars[x]);
+}
+
+c)
+forof:
+
+const cars = ["Benz","Maruti suzuki","Ferrari","Rolls royce"];
+
+let text ="";
+for (let x of cars) {
+  text += x;
+  console.log(x);
+}
+
+d) for each:
+
+let sum = 0;
+const numbers = [65,44,12,4];
+numbers.forEach(myFunction);
+
+function myFunction(item) {
+  sum += item 
+  console.log(item);
+}
+
+
+
+
+2) create your own resume data in json format
+
+let myResume = {
+  "basics": {
+    "name": "S.CHARLES",
+    "email": "charles143535@gmail.com",
+    "phone":9789654423,
+    "location": {
+      "address" : "15/88 lingaraj street ukkadam",
+      "postalCode":641023,
+      "city":"Coimbatore",
+      "state":"Tamilnadu",
+      "country":"India"
+    },
+    "profiles":[
+      {
+        "website":"www.javascript.com"
+      }
+      ]
+  },
+  "work": [
+    {
+      "company":"Axis bank",
+      "position":"Personal loan ro"
+    },
+    ],
+"education" :[
+  {
+    "institution " : "Bishop Ambrose College",
+    "department" : "Bcom ca",
+    "study type" : "full time",
+  }
+  ],
+  
+"languages": [
+  {
+    "language":"Tamil,English,Hindi",
+    }
+    ]
+}
+console.log(myResume);
+
